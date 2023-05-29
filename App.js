@@ -1,4 +1,5 @@
 import React from 'react';
+import { View, StatusBar, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -9,19 +10,28 @@ import TokYear2 from './screens/TokYear2';
 const Stack = createStackNavigator();
 
 const App = () => {
-  return (
-    <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen
-                name="Home"
-                component={HomeScreen}
-                options={{ headerShown: false }}
-            />
-            <Stack.Screen name="TOK Year 1" component={TokYear1} />
-            <Stack.Screen name="TOK Year 2" component={TokYear2} />
-        </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <View style={styles.container}>
+            <StatusBar backgroundColor="blue" barStyle="dark-content" />
+            <NavigationContainer>
+                <Stack.Navigator initialRouteName="Home">
+                    <Stack.Screen
+                        name="Home"
+                        component={HomeScreen}
+                        options={{ headerShown: false }}
+                    />
+                    <Stack.Screen name="TOK Year 1" component={TokYear1} />
+                    <Stack.Screen name="TOK Year 2" component={TokYear2} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </View>
+    );
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+});
 
 export default App;

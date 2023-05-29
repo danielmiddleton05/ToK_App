@@ -16,8 +16,13 @@ const TokYear1 = () => {
             case 'option2':
                 setContent(
                     <Text>
-                        Content for{' '}
+                        Lesson 6: What are Knowledge Questions?{' \n'}
                         <TouchableOpacity onPress={handleLinkPress}>
+                            <Text style={styles.linkText}>Link to Lesson 6 slides</Text>
+                        </TouchableOpacity>
+                        {'\n'}
+                        Content for{' \n'}
+                        <TouchableOpacity onPress={handleLinkPress1}>
                             <Text style={styles.linkText}>Option 2</Text>
                         </TouchableOpacity>
                     </Text>
@@ -45,8 +50,12 @@ const TokYear1 = () => {
     };
 
     const handleLinkPress = () => {
-        Linking.openURL('https://google.com'); // Replace with your desired external site URL
-      };
+        Linking.openURL('https://docs.google.com/presentation/d/1lWGmA4NcYPtBWyag1HAQ7y-AilkbAx9F9LezjpnEgiw/edit?usp=sharing');
+    };
+
+    const handleLinkPress1 = () => {
+        Linking.openURL('https://google.com');
+    };
 
     useEffect(() => {
         handleOptionChange('option1'); // Set the default option to 'option1'
