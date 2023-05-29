@@ -1,33 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Main from './screens/MainComponent';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
+import { createStackNavigator } from '@react-navigation/stack';
 
-export default function App() {
-    return (
-        <View style={styles.container}>
-            <NavigationContainer>
-                <Main />
-                <Header />
-                <Text style={styles.text}>GET STARTED DUMMY</Text>
-            </NavigationContainer>
-            <StatusBar style="auto" />
-        </View>
-    );
-}
+import HomeScreen from './screens/HomeScreen';
+import MainComponent from './screens/MainComponent';
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fafafa',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    text: {
-        color: 'red',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
+const Stack = createStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen
+                name="Home"
+                component={HomeScreen}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen name="Thing" component={MainComponent} />
+        </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
