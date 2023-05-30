@@ -3,33 +3,33 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Picker } from '@react-native-picker/picker'
 
 const TokYear2 = () => {
-    const [selectedOption, setSelectedOption] = useState('option1');
+    const [selectedOption, setSelectedOption] = useState('option8');
     const [content, setContent] = useState('');
   
     const handleOptionChange = (itemValue) => {
         setSelectedOption(itemValue);
         // Update the displayed content based on the selected option
         switch (itemValue) {
-            case 'option1':
-                setContent('Content for\nOption 1');
+            case 'option8':
+                setContent('Content for\nOption 8');
                 break;
-            case 'option2':
-                setContent('Content for Option 2');
+            case 'option9':
+                setContent('Content for Option 9');
                 break;
-            case 'option3':
-                setContent('Content for Option 3');
+            case 'option10':
+                setContent('Content for Option 10');
                 break;
-            case 'option4':
-                setContent('Content for Option 4');
+            case 'option11':
+                setContent('Content for Option 11');
                 break;
-            case 'option5':
-                setContent('Content for Option 5');
+            case 'option12':
+                setContent('Content for Option 12');
                 break;
-            case 'option6':
-                setContent('Content for Option 6');
+            case 'option13':
+                setContent('Content for Option 13');
                 break;
-            case 'option7':
-                setContent('Content for Option 7');
+            case 'option14':
+                setContent('Content for Option 14');
                 break;
             default:
                 setContent('');
@@ -38,7 +38,7 @@ const TokYear2 = () => {
     };
   
     useEffect(() => {
-        handleOptionChange('option1'); // Set the default option to 'option1'
+        handleOptionChange('option8'); // Set the default option to 'option1'
     }, []);
   
     return (
@@ -49,13 +49,13 @@ const TokYear2 = () => {
                 style={styles.picker}
                 itemStyle={styles.pickerItem}
             >
-                <Picker.Item label="Unit 8: Review" value="option1" />
-                <Picker.Item label="Unit 9: AOK the Arts" value="option2" />
-                <Picker.Item label="Unit 10: AOK Mathematics" value="option3" />
-                <Picker.Item label="Unit 11: AOK Human Sciences" value="option4" />
-                <Picker.Item label="Unit 12: AOK Natural Sciences" value="option5" />
-                <Picker.Item label="Unit 14: AOK History" value="option6" />
-                <Picker.Item label="Unit 15: The Essay" value="option7" />
+                <Picker.Item label="Unit 8: Review" value="option8" />
+                <Picker.Item label="Unit 9: AOK the Arts" value="option9" />
+                <Picker.Item label="Unit 10: AOK Mathematics" value="option10" />
+                <Picker.Item label="Unit 11: AOK Human Sciences" value="option11" />
+                <Picker.Item label="Unit 12: AOK Natural Sciences" value="option12" />
+                <Picker.Item label="Unit 13: AOK History" value="option13" />
+                <Picker.Item label="Unit 14: The Essay" value="option14" />
             </Picker>
     
             <View style={styles.contentContainer}>

@@ -12,7 +12,7 @@ const HomeScreen = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.textBox}>Click on the button below to view the class. Grade 11 is 'TOK Year 1' and grade 12 is 'TOK Year 2'.</Text>
+            <Text style={styles.textBox}>Click on the button below to view the class. {' \n'}It is recommended that you have the Google Slides app downloaded to your device.</Text>
             <TouchableOpacity
                 style={styles.button}
                 onPress={handlePress}
