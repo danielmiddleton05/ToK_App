@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Linking, ScrollView } from 'react-native';
-import { Picker } from '@react-native-picker/picker'
-import * as LessonLinks from '../shared/LessonLinks'
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import * as LessonLinks from '../shared/LessonLinks';
 
 const TokYear1 = () => {
     const [selectedOption, setSelectedOption] = useState('option1');
@@ -156,17 +156,65 @@ const TokYear1 = () => {
                         Lesson 16: Arts and an AOK{' \n'}
                         <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students will work in groups to analyze a recent RLS: 2021 Jan. 06 Capitol riots, Ukraine-Russia War, Redditors vs Wall Street, Anti-mask/covid protests, cryptocurrency scams, anti-CRT, or the rise of Christian nationalism in US</Text> {'\n'}
                         <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Need to create a group presentation with the following aspects: Description of RLS and KQ chosen, What role did the media AND social media play in fueling this event?, Identify the multiple perspectives of the RLS, and What implications does the RLS have for society and its use of tech?</Text>{'\n'}{'\n'}
-                    </Text>,
+                    </Text>
                 ]);
                 break;
             case 'option5':
-                setContent('Content for Option 5');
+                setContent([
+                    <Text key={18}>
+                        Lesson 17: Intro to TOK Exhibition{' \n'}
+                    </Text>,
+                    <Text key={19}>
+                        Lesson 18: Research and Workdays{' \n'}
+                    </Text>,
+                    <Text key={20}>
+                        Lesson 19: Submission of Practice Exhibit{' \n'}
+                    </Text>
+                ]);
                 break;
             case 'option6':
-                setContent('Content for Option 6');
+                setContent([
+                    <Text key={21}>
+                        Lesson 20: Intro to Politics in TOK{' \n'}
+                    </Text>,
+                    <Text key={22}>
+                        Lesson 21: Politics in Everything?{' \n'}
+                    </Text>,
+                    <Text key={23}>
+                        Lesson 22: Political Leaders and Systems{' \n'}
+                    </Text>,
+                    <Text key={24}>
+                        Lesson 23: Political Spectrums{' \n'}
+                    </Text>,
+                    <Text key={25}>
+                        Lesson 24: Politics within the AOKs{' \n'}
+                    </Text>
+                ]);
                 break;
             case 'option7':
-                setContent('Content for Option 7');
+                setContent([
+                    <Text key={26}>
+                        Lesson 25: Intro and Review{' \n'}
+                    </Text>,
+                    <Text key={27}>
+                        Lesson 26: Prompt and Outline{' \n'}
+                    </Text>,
+                    <Text key={28}>
+                        Lesson 27: Outline Review and Rough Draft{' \n'}
+                    </Text>,
+                    <Text key={29}>
+                        Lesson 28: Rough Draft Submission{' \n'}
+                    </Text>,
+                    <Text key={30}>
+                        Lesson 29: Final Draft Revision{' \n'}
+                    </Text>,
+                    <Text key={31}>
+                        Lesson 30: Final Draft Submission{' \n'}
+                    </Text>,
+                    <Text key={32}>
+                        Lesson 31: Perform TOK Exhibition{' \n'}
+                    </Text>
+                ]);
                 break;
             default:
                 setContent('');

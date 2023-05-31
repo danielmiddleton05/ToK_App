@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { Picker } from '@react-native-picker/picker'
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+import * as LessonLinks from '../shared/LessonLinks';
 
 const TokYear2 = () => {
     const [selectedOption, setSelectedOption] = useState('option8');
     const [content, setContent] = useState('');
   
     const handleOptionChange = (itemValue) => {
-        setSelectedOption(itemValue);
-        // Update the displayed content based on the selected option
+        setSelectedOption(itemValue); // Update the displayed content based on the selected option
         switch (itemValue) {
             case 'option8':
                 setContent('Content for\nOption 8');
@@ -38,7 +38,7 @@ const TokYear2 = () => {
     };
   
     useEffect(() => {
-        handleOptionChange('option8'); // Set the default option to 'option1'
+        handleOptionChange('option8'); // Set the default option to 'option8'
     }, []);
   
     return (
@@ -57,10 +57,16 @@ const TokYear2 = () => {
                 <Picker.Item label="Unit 13: AOK History" value="option13" />
                 <Picker.Item label="Unit 14: The Essay" value="option14" />
             </Picker>
+            <Text style={styles.infoText}>Lessons are 70 minutes</Text>
     
-            <View style={styles.contentContainer}>
-                <Text style={styles.contentText}>{content}</Text>
-            </View>
+            <ScrollView
+                contentContainerStyle={styles.scrollContentContainer}
+                showsVerticalScrollIndicator={true}
+            >
+                <View style={styles.contentContainer}>
+                    <Text selectable style={styles.contentText}>{content}</Text>
+                </View>
+            </ScrollView>
         </View>
     );
 };
@@ -71,25 +77,41 @@ const styles = StyleSheet.create({
         justifyContent: 'top',
         alignItems: 'center',
     },
+    scrollContentContainer: {
+        flexGrow: 1,
+        alignItems: 'center',
+        paddingHorizontal: '10%',
+    },
+    infoText: {
+        paddingBottom: 10,
+    },
     picker: {
         width: '80%',
-        marginBottom: 20,
+        marginBottom: 10,
     },
     pickerItem: {
         color: '#07689F', // Set the color of the picker item text
     },
     contentContainer: {
-        backgroundColor: '#ffe5e1',
-        padding: 10,
-        borderRadius: 5,
-        width: '80%',
+        backgroundColor: '#E8E8E8',
+        padding: 20,
+        borderRadius: 10,
     },
     contentText: {
-        fontSize: 18,
+        fontSize: 25,
+        color: '#FF7E67',
     },
-    boldText: {
-        fontWeight: 'bold',
+    bodyText: {
+        fontSize: 14,
+        color: 'black',
     },
+    bulletPoint: {
+        paddingLeft: 0,
+        color: 'black',
+    },
+    linkText: {
+        color: '#07689F',
+    }
 });
 
 export default TokYear2;
