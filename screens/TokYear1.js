@@ -163,12 +163,20 @@ const TokYear1 = () => {
                 setContent([
                     <Text key={18}>
                         Lesson 17: Intro to TOK Exhibition{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><TouchableOpacity onPress={LessonLinks.exhibitIntroPrez}>
+                            <Text style={styles.linkText}>Link to 'Exhibit Intro' slides</Text>
+                        </TouchableOpacity>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students will open a Google Doc (on Schoology) to begin their Exhibit</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={19}>
                         Lesson 18: Research and Workdays{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students will use their Google Doc to begin their research and write out their exhibit</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students should have their objects chosen and a basic outline</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>By the end of this week, students should have their rough draft completed</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={20}>
                         Lesson 19: Submission of Practice Exhibit{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students will submit the final draft of their TOK Exhibit</Text>{'\n'}{'\n'}
                     </Text>
                 ]);
                 break;
@@ -176,18 +184,41 @@ const TokYear1 = () => {
                 setContent([
                     <Text key={21}>
                         Lesson 20: Intro to Politics in TOK{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Help students understand their political viewpoints using the Political Compass Test</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><TouchableOpacity onPress={LessonLinks.politicalCompassLink}>
+                            <Text style={styles.linkText}>Link to 'Political Compass Test'</Text>
+                        </TouchableOpacity>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Discussion: Are there any innate issues with this kind of “test?” How accurate do you find the results? I think it would be important to note how much their views may change as they age</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={22}>
                         Lesson 21: Politics in Everything?{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><TouchableOpacity onPress={LessonLinks.lessonTwentyOnePrez}>
+                            <Text style={styles.linkText}>Link to Lesson 21 slides</Text>
+                        </TouchableOpacity>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Compare and contrast the qualities of various political leaders. Quality/trait claims should be backed up evidence {'('}news articles, etc{')'}, 5 quality claims per leader, try to be objective. Divide the students into groups {'('}or individually depending on class size{')'} and assign a leader</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>“All humankind needs to be governed; left to our devices, we will devolve into anarchy.” Address this claim by identifying the 2 perspectives</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={23}>
                         Lesson 22: Political Leaders and Systems{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Continue with Compare/Contrast political leaders, if needed</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>ACTIVITY: Identify “political systems” in place. Political systems exist in all aspects of our lives {'('}how we interact with each other…{')'}. Have students brainstorm in groups about the structures of political systems within their environments</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Example: “political system” of teachers. There is a hierarchy of power {'('}HODs, principals, HOS{')'}. Allocation of resources {'('}rooms, budget, supplies{')'}. Each has a role to play in the system {'('}job titles and classes to teach{')'}. Balance of cooperation and competition. The jargon is used specifically for the environment. How is leadership chosen? “Authoritarian dictatorship” vs democracy?</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students present their identified structures</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={24}>
                         Lesson 23: Political Spectrums{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><TouchableOpacity onPress={LessonLinks.lessonTwentyThreePrez}>
+                            <Text style={styles.linkText}>Link to Lesson 23 slides</Text>
+                        </TouchableOpacity>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>To what extent are our political views shaped by society, family, education, or social class? This will be the writing assignment if not covered in class</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={25}>
                         Lesson 24: Politics within the AOKs{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>{'('}Class Example{')'} AOK: History - Case-Study/RLS: The creation of Ukraine. KQ: On what criteria should we judge whether a war is justifiable? Perspective 1: War is justifiable to reunite a historical unity. Perspective 2: Aggressive war is wrong according to universal and historical standards.</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>AOK: Natural Sciences - Case-Study/RLS: Governments circumventing established scientific regulations for emergency situations. Guided perspective: How would government officials argue for speeding up the approval process? Guided perspective: What future implications could this have that may be detrimental to the scientific method? Students work through the guided perspectives</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>AOK: Math - Case-Study/RLS: “Decolonizing” Math. KQ: How might knowledge reflect or perpetuate existing power structures? Identify two perspectives</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>AOK: The Arts - Case-Study/RLS: Chinese artist Ai Weiwei censored by “anti-terrorist laws”. Identify two perspectives</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>AOK: Human Sciences - Case-Study/RLS: The minimum wage and unemployment. KQ: What kinds of knowledge inform our political opinions?</Text>{'\n'}{'\n'}
                     </Text>
                 ]);
                 break;
@@ -195,24 +226,41 @@ const TokYear1 = () => {
                 setContent([
                     <Text key={26}>
                         Lesson 25: Intro and Review{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Review Intro to TOK Exhibit</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><TouchableOpacity onPress={LessonLinks.introToExhibitPrez}>
+                            <Text style={styles.linkText}>Link to 'Intro to Exhibit' slides</Text>
+                        </TouchableOpacity>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Work through the class example {'('}FOR PRACTICE EXHIBIT{')'}</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><TouchableOpacity onPress={LessonLinks.exhibitClassExample}>
+                            <Text style={styles.linkText}>Link to 'Class Example' slides</Text>
+                        </TouchableOpacity>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students begin working on exhibition</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={27}>
                         Lesson 26: Prompt and Outline{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students should have chosen a prompt and theme by this time</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students will begin to work on creating a basic outline, should be finished by next class</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={28}>
                         Lesson 27: Outline Review and Rough Draft{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Outline completed. Students will meet one-to-one with the instructor {'('}allowed to give general feedback only, nothing too specific{')'}</Text>{'\n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>By the next class, students should have a rough draft read for review {'('}again, only general feedback given to students{')'}</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={29}>
                         Lesson 28: Rough Draft Submission{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Rough draft completed and read through by the instructor</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={30}>
                         Lesson 29: Final Draft Revision{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students should begin working on their final drafts, check student formatting</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={31}>
                         Lesson 30: Final Draft Submission{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Final draft due</Text>{'\n'}{'\n'}
                     </Text>,
                     <Text key={32}>
                         Lesson 31: Perform TOK Exhibition{' \n'}
+                        <Text style={styles.bulletPoint}>•</Text><Text style={styles.bodyText}>Students will perform the TOK Exhibit on the date and time chosen by admin</Text>{'\n'}{'\n'}
                     </Text>
                 ]);
                 break;

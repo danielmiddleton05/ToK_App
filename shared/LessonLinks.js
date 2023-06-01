@@ -71,3 +71,30 @@ export const lessonFourteenPrez = () => {
 export const lessonFifteenPrez = () => {
     Linking.openURL('https://docs.google.com/presentation/d/12L_td8BOZVplOufOWISrHBVg20eVqn1c3GuIj78XJRM/edit?usp=sharing');
 };
+
+export const exhibitIntroPrez = () => {
+    Linking.openURL('https://docs.google.com/presentation/d/1K_xZLI8io8DbXyJr5fbMafNHwTWJsA4FmD1c-2AchDQ/edit?usp=sharing');
+};
+
+export const politicalCompassLink = () => {
+    Linking.openURL('https://www.politicalcompass.org/test');
+};
+
+export const lessonTwentyOnePrez = () => {
+    Linking.openURL('https://docs.google.com/presentation/d/1BGtn64xZDTSJDJdlKWZGnyKDi4C109tVrw8UNUpcJgc/edit?usp=sharing');
+};
+
+export const lessonTwentyThreePrez = () => {
+    Linking.openURL('https://docs.google.com/presentation/d/1s3lzgc-YqvazDdzGF4tapy48X6nhY86oRwyg1J7gOjU/edit?usp=sharing');
+};
+
+export const introToExhibitPrez = () => {
+    Linking.openURL('https://docs.google.com/presentation/d/1K_xZLI8io8DbXyJr5fbMafNHwTWJsA4FmD1c-2AchDQ/edit?usp=sharing');
+};
+
+export const exhibitClassExample = () => {
+    Linking.openURL('https://docs.google.com/presentation/d/178OYSh2GaVxI0brApno0_Pwji8O9Du6oqLOBP_qOOCk/edit?usp=sharing');
+};
+
+// ---------------  END OF TOK YEAR 1 LINKS, START OF TOK YEAR 2 LINKS --------------- //
+
